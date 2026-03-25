@@ -1,0 +1,4 @@
+$bat = get-wmiobject -Namespace "root\wmi" -Class "BatteryControl"
+
+# The arguments are: Battery 1, HEALTH, Enabled, dummy bytes
+$bat.SetBatteryHealthControl(1, 1, 1, [byte[]](0, 0, 0, 0, 0))
