@@ -16,3 +16,9 @@ $bat.SetBatteryHealthControl(1, 1, 1, [byte[]](0, 0, 0, 0, 0))
 
 The RGB keyboard can be controlled via OpenRGB version 0.7.
 Also no need for chubby Nitrosense.
+
+Also there are interesting settings in `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\OEM\AcerAgentService\LightSetting`
+
+For the keyboard to do this fancy wave animation where it cycles through RGB colors
+- KeyBoardArea set to 0x4
+- KeyBoardColor set to 0x2
